@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scroll-snap-type</title>
+</head>
+<style>
+    .container {
+        width: 100%;
+        //height: 300px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        display: flex;
+    }
+    .container .item {
+        flex: 0 0 300px;
+        height: 100%;
+        box-sizing: border-box;
+        scroll-snap-align: center;
+        padding: 30px;
+    }
+    img{
+        max-height: 500px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="item">
+        <img src="https://live.staticflickr.com/65535/54421478138_9d149510e2_b.jpg" alt="test" />
+    </div>
+    <div class="item">
+        <img src="https://live.staticflickr.com/65535/54426645115_aef7655445_b.jpg" alt="test" />
+    </div>
+    <div class="item">
+        <img src="https://live.staticflickr.com/65535/54424692367_3d36df50a4_b.jpg" alt="">
+    </div>
+    <div class="item">
+        <img src="https://live.staticflickr.com/65535/54421990620_962fe35bbc_b.jpg" alt="">
+    </div>
+    <div class="item">
+        <img src="https://live.staticflickr.com/65535/54421871810_01faa98e44_b.jpg" alt="">
+    </div>
+    <div class="item">
+        <img src="https://live.staticflickr.com/65535/53777361338_eb64b8fc5f_b.jpg" alt="">
+    </div>
+    <div class="item">
+        <img src="https://live.staticflickr.com/65535/54424013768_42810154fb_b.jpg" alt="">
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

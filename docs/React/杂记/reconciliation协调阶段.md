@@ -1,0 +1,90 @@
+# reconciliation协调阶段
+- 摘自 通义千问
+在 React 中，**reconciliation（协调）阶段**是其核心算法的一部分，它决定了当组件的状态（state）或属性（props）发生变化时，React 如何高效地更新用户界面（UI）。
+
+简单来说，**reconciliation 是一个“diffing”过程**：React 会比较**新的虚拟 DOM 树**（由当前渲染生成）与**上一次渲染的虚拟 DOM 树**，找出需要更新的最小部分，并将这些变更应用到真实的 DOM 上。
+
+---
+
+### 1. 核心目标
+- **高效更新**：避免全量重渲染，只更新必要的 DOM 节点。
+- **保持状态**：在组件重新渲染时保留用户输入、DOM 状态等。
+- **提升性能**：通过算法优化减少昂贵的 DOM 操作。
+
+---
+
+### 2. 虚拟 DOM 的作用
+React 并不直接操作真实的浏览器 DOM，而是维护一个轻量级的、用 JavaScript 对象表示的 **虚拟 DOM（Virtual DOM）**。
+
+当状态变化时：
+1. React 创建一个新的虚拟 DOM 树。
+2. 通过 **reconciliation 算法**，与旧的虚拟 DOM 树进行比较。
+3. 计算出最小的变更集（diff）。
+4. 将这些变更**批量更新到真实 DOM**。
+
+---
+
+### 3. Reconciliation 的关键策略（React 16+ Fiber 架构）
+
+从 React 16 开始，reconciliation 使用了 **Fiber 架构**，使得这个过程可以被中断、暂停、恢复，从而提高应用的响应性。
+
+#### 阶段划分：
+- **Render 阶段（reconciliation）**：
+    - 又称“可中断渲染”阶段。
+    - React 遍历组件树，调用 `render()` 或函数组件的执行，生成新的虚拟 DOM。
+    - 比较新旧 Fiber 树，找出需要更新的节点。
+    - 此阶段**不修改真实 DOM**，可以被高优先级任务中断。
+    - 输出结果是一个带有副作用（side effects）标记的 **Fiber 树（work-in-progress tree）**。
+
+- **Commit 阶段（提交）**：
+    - 这个阶段不可中断。
+    - React 将 reconciliation 阶段计算出的变更**一次性应用到真实 DOM**。
+    - 执行 `useEffect`、`componentDidUpdate` 等生命周期钩子。
+
+---
+
+### 4. Diffing 算法的启发式优化
+为了提升性能，React 采用了以下策略：
+
+1. **类型不同 → 重建整棵子树**
+    - 如果根节点类型不同（如 `div` 变成 `span`），React 会销毁旧树，创建新树。
+
+2. **相同类型组件 → 保留实例，只更新 props/state**
+    - 类组件实例保持不变，调用 `componentWillReceiveProps`、`shouldComponentUpdate` 等。
+
+3. **列表 diff：使用 `key` 属性**
+    - 对于列表渲染，React 使用 `key` 来识别元素的唯一性。
+    - 正确使用 `key`（如唯一 ID）能大幅提高列表更新效率，避免不必要的重渲染。
+
+---
+
+### 5. 总结
+| 项目 | 说明 |
+|------|------|
+| **何时发生** | 当 `setState()`、`useState`、`useReducer` 等触发状态更新时 |
+| **主要任务** | 比较新旧虚拟 DOM，找出变更 |
+| **是否修改 DOM** | 否（真正的 DOM 修改在 commit 阶段） |
+| **是否可中断** | 是（Fiber 架构支持） |
+| **性能关键** | 使用 `key`、避免不必要的重渲染、合理使用 `memo`/`useMemo` |
+
+---
+
+### 举个例子：
+```jsx
+function List({ items }) {
+  return (
+    <ul>
+      {items.map(item => (
+        <li key={item.id}>{item.text}</li> // key 帮助 React 高效 diff
+      ))}
+    </ul>
+  );
+}
+```
+
+当 `items` 数组顺序变化或新增项时，React 通过 `key` 快速识别哪些项是新增、删除或移动的，而不是重新渲染整个列表。
+
+---
+
+✅ **一句话总结**：  
+**Reconciliation 阶段是 React 决定“哪些 UI 需要更新”的过程，它通过比较虚拟 DOM 树，找出最小变更集，为高效更新真实 DOM 做准备。**

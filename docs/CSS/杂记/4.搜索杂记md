@@ -1,0 +1,31 @@
+# 文字两端对齐
+```css
+textA: {
+    text-align: justify;
+}
+```
+# P标签强制不换行 超出隐藏
+```css
+overflow: hidden;
+text-overflow: ellipsis;
+white-space:nowrap;
+```
+# 哀悼日 页面主题颜色修改 疫情  黑白色
+```css
+html {
+filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+-webkit-filter:grayscale(100%);
+}
+```
+# span 超出部分使用 ... 隐藏
+```css
+span{
+// display: inline-block;
+width: 350px;
+word-wrap: break-word;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+```
