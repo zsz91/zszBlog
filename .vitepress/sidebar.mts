@@ -409,8 +409,8 @@ export default {
           "link": "/JavaScript/ES6/8.2 Promise-2 then方法 cath方法"
         },
         {
-          "text": "8.3 Promise-3 async函数和await表达式 all方法 allsettled方法",
-          "link": "/JavaScript/ES6/8.3 Promise-3 async函数和await表达式 all方法 allsettled方法"
+          "text": "8.3 Promise-3 各种函数 all方法 allsettled方法等",
+          "link": "/JavaScript/ES6/8.3 Promise-3 各种函数 all方法 allsettled方法等"
         },
         {
           "text": "8.4 集合Set set WeakSet",
@@ -423,6 +423,10 @@ export default {
         {
           "text": "8.6 并发执行 按顺序执行多个异步任务 async await 相关",
           "link": "/JavaScript/ES6/8.6 并发执行 按顺序执行多个异步任务 async await 相关"
+        },
+        {
+          "text": "8.7 async_await的方方面面",
+          "link": "/JavaScript/ES6/8.7 async_await的方方面面"
         },
         {
           "text": "9.1 class",
