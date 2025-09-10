@@ -674,10 +674,6 @@ export default {
       "text": "杂记",
       "items": [
         {
-          "text": "reconciliation协调阶段",
-          "link": "/React/杂记/reconciliation协调阶段"
-        },
-        {
           "text": "1.key的妙用",
           "link": "/React/杂记/1.key的妙用"
         },
@@ -690,8 +686,24 @@ export default {
           "link": "/React/杂记/3.useEffect的闭包陷阱(stale closure)"
         },
         {
-          "text": "4. React合成事件",
-          "link": "/React/杂记/4. React合成事件"
+          "text": "4. React事件机制",
+          "link": "/React/杂记/4. React事件机制"
+        },
+        {
+          "text": "5. reconciliation协调阶段",
+          "link": "/React/杂记/5. reconciliation协调阶段"
+        },
+        {
+          "text": "6. hooks中为什么不能写if_else_for",
+          "link": "/React/杂记/6. hooks中为什么不能写if_else_for"
+        },
+        {
+          "text": "7. Fiber架构的一切",
+          "link": "/React/杂记/7. Fiber架构的一切"
+        },
+        {
+          "text": "8.调度器scheduler",
+          "link": "/React/杂记/8.调度器scheduler"
         }
       ]
     }
