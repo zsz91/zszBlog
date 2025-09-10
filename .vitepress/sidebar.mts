@@ -926,6 +926,10 @@ export default {
           "link": "/杂记/杂记/11. 浏览器-如何访问文件夹"
         },
         {
+          "text": "12. 浏览器-IntersectionObserver APi",
+          "link": "/杂记/杂记/12. 浏览器-IntersectionObserver APi"
+        },
+        {
           "text": "13.浏览器-Clipboard Api",
           "link": "/杂记/杂记/13.浏览器-Clipboard Api"
         },
@@ -1075,6 +1079,10 @@ export default {
         {
           "text": "3.算法-耗时最短的IP地址",
           "link": "/杂记/算法/3.算法-耗时最短的IP地址"
+        },
+        {
+          "text": "4. 算法-圈复杂度",
+          "link": "/杂记/算法/4. 算法-圈复杂度"
         }
       ]
     }
