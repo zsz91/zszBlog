@@ -37,6 +37,10 @@ export default [
                 text: '杂记',
                 link: '/React/杂记/1.key的妙用.md',
             },
+            {
+                text: 'Hooks',
+                link: '/React/Hooks/1. Hooks的由来与基本介绍.md',
+            },
         ]
     },
     {
