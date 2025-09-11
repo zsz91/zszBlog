@@ -682,8 +682,8 @@ export default {
           "link": "/React/杂记/1.key的妙用"
         },
         {
-          "text": "2.不建议在useEffect中进行数据获取的理由",
-          "link": "/React/杂记/2.不建议在useEffect中进行数据获取的理由"
+          "text": "2. 不建议在useEffect中进行数据获取的理由",
+          "link": "/React/杂记/2. 不建议在useEffect中进行数据获取的理由"
         },
         {
           "text": "3.useEffect的闭包陷阱(stale closure)",
@@ -706,8 +706,20 @@ export default {
           "link": "/React/杂记/7. Fiber架构的一切"
         },
         {
-          "text": "8.调度器scheduler",
-          "link": "/React/杂记/8.调度器scheduler"
+          "text": "8. 调度器scheduler",
+          "link": "/React/杂记/8. 调度器scheduler"
+        },
+        {
+          "text": "9. use_react19",
+          "link": "/React/杂记/9. use_react19"
+        },
+        {
+          "text": "10. Suspense",
+          "link": "/React/杂记/10. Suspense"
+        },
+        {
+          "text": "11. Lazy",
+          "link": "/React/杂记/11. Lazy"
         }
       ]
     }
@@ -799,6 +811,10 @@ export default {
       "text": "TypeScript",
       "items": [
         {
+          "text": "0. 常用代码",
+          "link": "/杂记/TypeScript/0. 常用代码"
+        },
+        {
           "text": "1. 基础-上篇",
           "link": "/杂记/TypeScript/1. 基础-上篇"
         },
@@ -837,10 +853,6 @@ export default {
         {
           "text": "10. 面试题相关",
           "link": "/杂记/TypeScript/10. 面试题相关"
-        },
-        {
-          "text": " 11. 常用代码",
-          "link": "/杂记/TypeScript/ 11. 常用代码"
         },
         {
           "text": "12. 泛型",
