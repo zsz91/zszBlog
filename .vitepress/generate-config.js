@@ -21,20 +21,19 @@ function generateSidebarConfig() {
                         const sidebarPath = `/${dirName}/${subDirName}`;
                         const sidebarItems = [];
 
-                        const files = fs.readdirSync(path.join(docsDir, dirName, subDirName));
+                        const files = fs.readdirSync(path.join(docsDir, dirName, subDirName)).filter(file => file.endsWith('.md'));
                         files.sort((a, b) => {
                             const numA = parseInt(a.match(/\d+/) || 0);
                             const numB = parseInt(b.match(/\d+/) || 0);
                             return numA - numB;
                         });
-                        files.forEach(file => {
-                            if (path.extname(file) === '.md') {
+
+                        files.forEach((file, index) => {
                                 const fileName = path.parse(file).name;
                                 sidebarItems.push({
-                                    text: fileName,
+                                   text: fileName.replace(/^(\d+)/, String(index + 1) + ' ').replace(/\s+/g, ' ').trim(), // 文件名开始的数字替换成 (index + 1)
                                     link: `${sidebarPath}/${fileName}`
                                 });
-                            }
                         });
 
                         sidebar[sidebarPath] = [
