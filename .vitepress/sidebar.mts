@@ -757,8 +757,8 @@ export default {
           "link": "/React/杂记/5. reconciliation协调阶段"
         },
         {
-          "text": "6 . hooks中为什么不能写if_else_for",
-          "link": "/React/杂记/6. hooks中为什么不能写if_else_for"
+          "text": "6 . Hook的一些限制",
+          "link": "/React/杂记/6. Hook的一些限制"
         },
         {
           "text": "7 . Fiber架构的一切",
@@ -779,6 +779,10 @@ export default {
         {
           "text": "11 . Lazy",
           "link": "/React/杂记/11. Lazy"
+        },
+        {
+          "text": "12 . 在React中Dom是怎么创建的",
+          "link": "/React/杂记/12. 在React中Dom是怎么创建的"
         }
       ]
     }
@@ -965,171 +969,179 @@ export default {
           "link": "/杂记/杂记/2. 工具-自动生成增删改查API的网站"
         },
         {
-          "text": "3 .原理-styled-components实现原理",
+          "text": "3 . 幂等性",
+          "link": "/杂记/杂记/3. 幂等性"
+        },
+        {
+          "text": "4 .原理-styled-components实现原理",
           "link": "/杂记/杂记/4.原理-styled-components实现原理"
         },
         {
-          "text": "4 . 中断,继续多层循环",
+          "text": "5 . 中断,继续多层循环",
           "link": "/杂记/杂记/5. 中断,继续多层循环"
         },
         {
-          "text": "5 .JS-动态表单的实现",
+          "text": "6 .JS-动态表单的实现",
           "link": "/杂记/杂记/6.JS-动态表单的实现"
         },
         {
-          "text": "6 .工具-一键识别网页开发技术",
+          "text": "7 .工具-一键识别网页开发技术",
           "link": "/杂记/杂记/7.工具-一键识别网页开发技术"
         },
         {
-          "text": "7 .浏览器控制台快速拿到元素",
+          "text": "8 .浏览器控制台快速拿到元素",
           "link": "/杂记/杂记/8.浏览器控制台快速拿到元素"
         },
         {
-          "text": "8 .面试-手写一个Promise.all",
+          "text": "9 .面试-手写一个Promise.all",
           "link": "/杂记/杂记/9.面试-手写一个Promise.all"
         },
         {
-          "text": "9 .JS-属性读取方式",
+          "text": "10 .JS-属性读取方式",
           "link": "/杂记/杂记/10.JS-属性读取方式"
         },
         {
-          "text": "10 . 浏览器-如何访问文件夹",
+          "text": "11 . 浏览器-如何访问文件夹",
           "link": "/杂记/杂记/11. 浏览器-如何访问文件夹"
         },
         {
-          "text": "11 . 浏览器-IntersectionObserver APi",
+          "text": "12 . 浏览器-IntersectionObserver APi",
           "link": "/杂记/杂记/12. 浏览器-IntersectionObserver APi"
         },
         {
-          "text": "12 .浏览器-Clipboard Api",
+          "text": "13 .浏览器-Clipboard Api",
           "link": "/杂记/杂记/13.浏览器-Clipboard Api"
         },
         {
-          "text": "13 . JS-消灭异步的传染性（代数效应）",
+          "text": "14 . JS-消灭异步的传染性（代数效应）",
           "link": "/杂记/杂记/16. JS-消灭异步的传染性（代数效应）"
         },
         {
-          "text": "14 . JS-创建WebWorker时,如何不指定特定的文件",
+          "text": "15 . JS-创建WebWorker时,如何不指定特定的文件",
           "link": "/杂记/杂记/18. JS-创建WebWorker时,如何不指定特定的文件"
         },
         {
-          "text": "15 . JS-requestAnimationFrame 深度学习(请求动画帧)",
+          "text": "16 . JS-requestAnimationFrame 深度学习(请求动画帧)",
           "link": "/杂记/杂记/19. JS-requestAnimationFrame 深度学习(请求动画帧)"
         },
         {
-          "text": "16 . JS-antd-水印组件的实现",
+          "text": "17 . JS-antd-水印组件的实现",
           "link": "/杂记/杂记/21. JS-antd-水印组件的实现"
         },
         {
-          "text": "17 . JS-class和 object 的访问器成员",
+          "text": "18 . JS-class和 object 的访问器成员",
           "link": "/杂记/杂记/24. JS-class和 object 的访问器成员"
         },
         {
-          "text": "18 . JS-使用Object.freeze优化性能",
+          "text": "19 . JS-使用Object.freeze优化性能",
           "link": "/杂记/杂记/26. JS-使用Object.freeze优化性能"
         },
         {
-          "text": "19 . JS-游离节点造成的内存泄露",
+          "text": "20 . JS-游离节点造成的内存泄露",
           "link": "/杂记/杂记/27. JS-游离节点造成的内存泄露"
         },
         {
-          "text": "20 . 浏览器-监控页面卡顿PerformanceObserver",
+          "text": "21 . 浏览器-监控页面卡顿PerformanceObserver",
           "link": "/杂记/杂记/28. 浏览器-监控页面卡顿PerformanceObserver"
         },
         {
-          "text": "21 . JS-深拷贝",
+          "text": "22 . JS-深拷贝",
           "link": "/杂记/杂记/29. JS-深拷贝"
         },
         {
-          "text": "22 . HTML-你不知道的HTML属性",
+          "text": "23 . 大文件上传",
+          "link": "/杂记/杂记/30. 大文件上传"
+        },
+        {
+          "text": "24 . HTML-你不知道的HTML属性",
           "link": "/杂记/杂记/32. HTML-你不知道的HTML属性"
         },
         {
-          "text": "23 .工具-图床网站Lorem",
+          "text": "25 .工具-图床网站Lorem",
           "link": "/杂记/杂记/33.工具-图床网站Lorem"
         },
         {
-          "text": "24 .HTML-使用SVG滤镜创建文字的纹理",
+          "text": "26 .HTML-使用SVG滤镜创建文字的纹理",
           "link": "/杂记/杂记/34.HTML-使用SVG滤镜创建文字的纹理"
         },
         {
-          "text": "25 .工具-使用node-modules-inspector查看项目的依赖关系",
+          "text": "27 .工具-使用node-modules-inspector查看项目的依赖关系",
           "link": "/杂记/杂记/36.工具-使用node-modules-inspector查看项目的依赖关系"
         },
         {
-          "text": "26 .JS-提取html富文本中的纯文本",
+          "text": "28 .JS-提取html富文本中的纯文本",
           "link": "/杂记/杂记/37.JS-提取html富文本中的纯文本"
         },
         {
-          "text": "27 .JS-使用文档注释代替单行,多行注释",
+          "text": "29 .JS-使用文档注释代替单行,多行注释",
           "link": "/杂记/杂记/38.JS-使用文档注释代替单行,多行注释"
         },
         {
-          "text": "28 .JS-中文输入法导致的高频事件",
+          "text": "30 .JS-中文输入法导致的高频事件",
           "link": "/杂记/杂记/41.JS-中文输入法导致的高频事件"
         },
         {
-          "text": "29 .面试-资深前端应该涉及的技术点(包装简历)",
+          "text": "31 .面试-资深前端应该涉及的技术点(包装简历)",
           "link": "/杂记/杂记/42.面试-资深前端应该涉及的技术点(包装简历)"
         },
         {
-          "text": "30 .网站-蚂蚁开源的移动端动画网站",
+          "text": "32 .网站-蚂蚁开源的移动端动画网站",
           "link": "/杂记/杂记/43.网站-蚂蚁开源的移动端动画网站"
         },
         {
-          "text": "31 .如何将一个函数放入微队列",
+          "text": "33 .如何将一个函数放入微队列",
           "link": "/杂记/杂记/46.如何将一个函数放入微队列"
         },
         {
-          "text": "32 .图片裁剪上传原理",
+          "text": "34 .图片裁剪上传原理",
           "link": "/杂记/杂记/47.图片裁剪上传原理"
         },
         {
-          "text": "33 .多次触发的动画结束事件",
+          "text": "35 .多次触发的动画结束事件",
           "link": "/杂记/杂记/48.多次触发的动画结束事件"
         },
         {
-          "text": "34 .函数的重载与参数归一化",
+          "text": "36 .函数的重载与参数归一化",
           "link": "/杂记/杂记/49.函数的重载与参数归一化"
         },
         {
-          "text": "35 .this的指向总结",
+          "text": "37 .this的指向总结",
           "link": "/杂记/杂记/50.this的指向总结"
         },
         {
-          "text": "36 .阻止鼠标滚轮事件",
+          "text": "38 .阻止鼠标滚轮事件",
           "link": "/杂记/杂记/52.阻止鼠标滚轮事件"
         },
         {
-          "text": "37 .发布订阅模式",
+          "text": "39 .发布订阅模式",
           "link": "/杂记/杂记/53.发布订阅模式"
         },
         {
-          "text": "38 .在多个窗口中拖拽同一张图片",
+          "text": "40 .在多个窗口中拖拽同一张图片",
           "link": "/杂记/杂记/54.在多个窗口中拖拽同一张图片"
         },
         {
-          "text": "39 .Javascript页面的生命周期",
+          "text": "41 .Javascript页面的生命周期",
           "link": "/杂记/杂记/55.Javascript页面的生命周期"
         },
         {
-          "text": "40 .浏览器环境下ESModule的工作原理",
+          "text": "42 .浏览器环境下ESModule的工作原理",
           "link": "/杂记/杂记/57.浏览器环境下ESModule的工作原理"
         },
         {
-          "text": "41 . 公共组件如何设计和Solid原则",
+          "text": "43 . 公共组件如何设计和Solid原则",
           "link": "/杂记/杂记/59. 公共组件如何设计和Solid原则"
         },
         {
-          "text": "42 . Object.seal密封对象",
+          "text": "44 . Object.seal密封对象",
           "link": "/杂记/杂记/60. Object.seal密封对象"
         },
         {
-          "text": "43 . 拼多多Promise面试题",
+          "text": "45 . 拼多多Promise面试题",
           "link": "/杂记/杂记/61. 拼多多Promise面试题"
         },
         {
-          "text": "44 . 优化白屏时间",
+          "text": "46 . 优化白屏时间",
           "link": "/杂记/杂记/63. 优化白屏时间"
         }
       ]
