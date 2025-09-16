@@ -47,6 +47,10 @@ export default [
         text: 'JavaScript',
         items: [
             {
+              text: 'JS基础',
+              link: '/JavaScript/JS基础/1. 读书笔记P0-P30',
+            },
+            {
                 text: 'ES6',
                 link: '/JavaScript/ES6/1. let const var',
             },
@@ -57,6 +61,10 @@ export default [
             {
                 text: '函数的一切',
                 link: '/JavaScript/函数的一切/1. Arguments 对象'
+            },
+            {
+                text: '重难点',
+                link: '/JavaScript/JS重难点/1. __proto__隐式原型'
             },
         ],
     },

@@ -515,6 +515,60 @@ export default {
       ]
     }
   ],
+  "/JavaScript/JS基础": [
+    {
+      "text": "JS基础",
+      "items": [
+        {
+          "text": "1 . 读书笔记P0-P30",
+          "link": "/JavaScript/JS基础/1. 读书笔记P0-P30"
+        },
+        {
+          "text": "2 . 读书笔记P31-P60",
+          "link": "/JavaScript/JS基础/2. 读书笔记P31-P60"
+        },
+        {
+          "text": "3 . 读书笔记P62-P90",
+          "link": "/JavaScript/JS基础/3. 读书笔记P62-P90"
+        },
+        {
+          "text": "4 . 读书笔记P91-P130",
+          "link": "/JavaScript/JS基础/4. 读书笔记P91-P130"
+        },
+        {
+          "text": "5 . 读书笔记P131-P174",
+          "link": "/JavaScript/JS基础/5. 读书笔记P131-P174"
+        },
+        {
+          "text": "6 . 读书笔记P175-P216",
+          "link": "/JavaScript/JS基础/6.  读书笔记P175-P216"
+        },
+        {
+          "text": "7 . 读书笔记P248-P278",
+          "link": "/JavaScript/JS基础/6.  读书笔记P248-P278"
+        }
+      ]
+    }
+  ],
+  "/JavaScript/JS重难点": [
+    {
+      "text": "JS重难点",
+      "items": [
+        {
+          "text": "1 . __proto__隐式原型",
+          "link": "/JavaScript/JS重难点/1. __proto__隐式原型"
+        },
+        {
+          "text": "2 . prototype 原型",
+          "link": "/JavaScript/JS重难点/2. prototype 原型"
+        },
+        {
+          "text": "3 . 对象转原始类型",
+          "link": "/JavaScript/JS重难点/3. 对象转原始类型"
+        }
+      ]
+    }
+  ],
   "/JavaScript/函数的一切": [
     {
       "text": "函数的一切",
