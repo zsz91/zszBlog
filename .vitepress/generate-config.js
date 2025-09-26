@@ -31,7 +31,7 @@ function generateSidebarConfig() {
                         files.forEach((file, index) => {
                                 const fileName = path.parse(file).name;
                                 sidebarItems.push({
-                                   text: fileName.replace(/^(\d+)/, String(index + 1) + ' ').replace(/\s+/g, ' ').trim(), // 文件名开始的数字替换成 (index + 1)
+                                   text: fileName.replace(/^(\d+)/, String(index + 1) + ' ').replace(/\s+/g, '').trim(), // 文件名开始的数字替换成 (index + 1)
                                     link: `${sidebarPath}/${fileName}`
                                 });
                         });
